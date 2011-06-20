@@ -11,9 +11,9 @@ options {
 	// Uncomment the following block, and insert the addresses replacing 
 	// the all-0's placeholder.
 
-	// forwarders {
-	// 	0.0.0.0;
-	// };
+	forwarders {
+	 	8.8.8.8; // Para buscar outros dominios que nao estao na minha maquina
+	 };
 
 	auth-nxdomain no;    # conform to RFC1035
 	listen-on-v6 { any; };
