@@ -1,0 +1,32 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+lp.local		IN SOA	lp.local. postmaster.lp.local. (
+				2011060301 ; serial
+				3600       ; refresh (1 hour)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				43200      ; minimum (12 hours)
+				)
+			NS	ns.lp.local.
+			NS	dns.softsell.com.br.
+;			A	189.125.41.82
+;			A	189.125.41.86
+			A	173.255.196.209
+			MX	5 mx.lp.local.
+$ORIGIN lp.local.
+av			A	189.125.41.83
+glpi			A	189.125.41.85
+mail			A	189.125.41.83
+mg			A	189.125.41.86
+mx			A	189.125.41.86
+noc			A	200.247.43.10
+ns			A	200.247.43.3
+ocs			A	189.125.41.85
+sitenovo		A	189.125.41.82
+upmail			A	189.125.41.82
+webmail			A	189.125.41.82
+webmail2		A	189.125.41.82
+;www			A	189.125.41.82
+;www			A	189.125.41.86	
+www			A	173.255.196.209	
+videos			A	173.255.196.209	

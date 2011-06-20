@@ -6,3 +6,8 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "lp.local" in {
+	type master;
+//	allow-transfer { 184.72.224.159; }; // permitir transaferencia de zona para IP (slave)
+	file "master/lp.local";
+};
